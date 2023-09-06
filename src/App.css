@@ -1,4 +1,9 @@
-.App {
+.course-goals h2{
+  text-align: center;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +41,4 @@
     transform: rotate(360deg);
   }
 }
+ */
