@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+import GoalList from './Components/GoalList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="course-goals">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +19,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <h2>Course Goals</h2>
+      <GoalList />  
     </div>
   );
 }
