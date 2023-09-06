@@ -2,8 +2,20 @@
 import './App.css';
 
 import GoalList from './Components/GoalList';
-
+import NewGoal from './Components/NewGoal/NewGoal'
 function App() {
+
+  
+  const courseGoals=[
+    {id:'cg1', text: 'Finish the Course'},
+    {id:'cg2', text: 'Learn about the course main topics'},
+    {id:'cg3', text: 'Help other studentds in course Q&A'},
+  ];
+
+  const addNewGoalHandler = (newGoal) => {
+    courseGoals.push(newGoal);
+    console.log(courseGoals);
+  };
   return (
     <div className="course-goals">
       {/* <header className="App-header">
@@ -21,7 +33,8 @@ function App() {
         </a>
       </header> */}
       <h2>Course Goals</h2>
-      <GoalList />  
+      <NewGoal addGoalOn={addNewGoalHandler}/>
+      <GoalList  goals={courseGoals} />  
     </div>
   );
 }
